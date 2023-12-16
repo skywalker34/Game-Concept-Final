@@ -6,6 +6,10 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Samples/Cinemachine/2.8.9/Cinemachine Example Scenes/Scenes/3rdPersonWithAimMode/3rdPersonWithAimMode.unity
-    guid: a04cf6ca22a95684e9283ab039f68c66
+    path: Assets/Scenes/Level 1.unity
+    guid: 675b88871e0d9404bbd601abaabb86eb
+  - enabled: 1
+    path: Assets/Scenes/Level 2.unity
+    guid: 837350c985f89ab4e8ae05839831764f
   m_configObjects: {}
+  m_UseUCBPForAssetBundles: 0
