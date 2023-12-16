@@ -11,5 +11,17 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Level 2.unity
     guid: 837350c985f89ab4e8ae05839831764f
+-   enabled: 1
+    path: Assets/Scenes/MainMenu.unity
+    guid: 57b731329a705104295f0198115ce15d
+  - enabled: 1
+    path: Assets/Scenes/Controls.unity
+    guid: d19d0642007d23c4784bc69fb9b13122
+  - enabled: 1
+    path: Assets/Scenes/Settings.unity
+    guid: 49c269c554efd6d49ae88ee10f6efdc6
+  - enabled: 1
+    path: Assets/Samples/Cinemachine/2.8.9/Cinemachine Example Scenes/Scenes/3rdPersonWithAimMode/3rdPersonWithAimMode.unity
+    guid: a04cf6ca22a95684e9283ab039f68c66
   m_configObjects: {}
   m_UseUCBPForAssetBundles: 0
