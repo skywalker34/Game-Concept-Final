@@ -13,6 +13,10 @@ public class Shooting : MonoBehaviour
     private float lastShotTime;
     private int currentPower;
 
+    [Header("Sounds")]
+    public AudioSource shoot;
+
+
     void Update()
     {
         if (PauseMenu.isPaused) return;
@@ -63,6 +67,7 @@ public class Shooting : MonoBehaviour
         {
             bulletControl.target = cameraTransform.position + cameraTransform.forward;
         }
+        shoot.Play();
 
     }
 }
