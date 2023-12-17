@@ -16,6 +16,7 @@ public class Shooting : MonoBehaviour
     void Update()
     {
         if (PauseMenu.isPaused) return;
+        if (GameOver.isGameOver) return;
         currentPower = reloadBar.GetPower();
         if (Input.GetMouseButtonDown(0))
         {

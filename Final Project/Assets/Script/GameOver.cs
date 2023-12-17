@@ -3,6 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class GameOver : MonoBehaviour
 {
+    public static bool isGameOver = false;
     public GameObject gameOverUI;
 
     public void Restart()
@@ -19,6 +20,7 @@ public class GameOver : MonoBehaviour
 
     public void DisplayGameOver()
     {
+        isGameOver = true;
         gameOverUI.SetActive(true);
     }
 }

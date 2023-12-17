@@ -31611,7 +31611,7 @@ Transform:
   m_GameObject: {fileID: 1787124812}
   serializedVersion: 2
   m_LocalRotation: {x: 0.32326594, y: 0, z: 0, w: 0.94630814}
-  m_LocalPosition: {x: 134.00694, y: 4.060865, z: 134.57983}
+  m_LocalPosition: {x: 133.87256, y: 4.3211837, z: 134.78117}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -34549,7 +34549,7 @@ Transform:
   m_GameObject: {fileID: 1925854222}
   serializedVersion: 2
   m_LocalRotation: {x: 0.32326594, y: 0, z: 0, w: 0.94630814}
-  m_LocalPosition: {x: 133.61394, y: 2.8851016, z: 136.14482}
+  m_LocalPosition: {x: 133.68138, y: 2.8851016, z: 136.14482}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -39343,15 +39343,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4138568063430612830, guid: 051aeb32fe6a6bc4e869f0f1f21f1acc, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 134.00694
+      value: 133.87256
       objectReference: {fileID: 0}
     - target: {fileID: 4138568063430612830, guid: 051aeb32fe6a6bc4e869f0f1f21f1acc, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.060865
+      value: 4.3211837
       objectReference: {fileID: 0}
     - target: {fileID: 4138568063430612830, guid: 051aeb32fe6a6bc4e869f0f1f21f1acc, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 134.57983
+      value: 134.78117
       objectReference: {fileID: 0}
     - target: {fileID: 4138568063430612830, guid: 051aeb32fe6a6bc4e869f0f1f21f1acc, type: 3}
       propertyPath: m_LocalRotation.w
@@ -39399,11 +39399,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4138568063761428208, guid: 051aeb32fe6a6bc4e869f0f1f21f1acc, type: 3}
       propertyPath: m_ScreenX
-      value: 0.26
+      value: 0.34
       objectReference: {fileID: 0}
     - target: {fileID: 4138568063761428208, guid: 051aeb32fe6a6bc4e869f0f1f21f1acc, type: 3}
       propertyPath: m_ScreenY
-      value: 0.79
+      value: 0.9
       objectReference: {fileID: 0}
     - target: {fileID: 4138568063761428208, guid: 051aeb32fe6a6bc4e869f0f1f21f1acc, type: 3}
       propertyPath: m_CameraDistance
@@ -39419,7 +39419,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4138568063761428209, guid: 051aeb32fe6a6bc4e869f0f1f21f1acc, type: 3}
       propertyPath: m_HorizontalAxis.m_MaxSpeed
-      value: 10
+      value: 15
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 4138568063761428210, guid: 051aeb32fe6a6bc4e869f0f1f21f1acc, type: 3}
