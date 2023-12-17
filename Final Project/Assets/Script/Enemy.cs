@@ -20,7 +20,7 @@ public class Enemy : MonoBehaviour
 
         if (isDead)
         {
-            Debug.Log("dead");
+            agent.speed = 0;
             AnimatorStateInfo stateInfo = animator.GetCurrentAnimatorStateInfo(0);
             if (stateInfo.IsName("Zombie Dying") && stateInfo.normalizedTime >= 1.0f)
             {
