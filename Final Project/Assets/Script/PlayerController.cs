@@ -8,6 +8,7 @@ public class PlayerController : MonoBehaviour
     public Transform groundCheck;
     public LayerMask groundLayer;
     public Animator animator;
+    public GameOver gameOver;
 
     public float speed = 10f;
     public float turnSmoothTime = 0.1f;
@@ -19,7 +20,12 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        if (isDead) return;
+        if (PauseMenu.isPaused) return;
+        if (isDead)
+        {
+            gameOver.DisplayGameOver();
+            return;
+        }
 
         float horizontal = Input.GetAxisRaw("Horizontal");
         float vertical = Input.GetAxisRaw("Vertical");

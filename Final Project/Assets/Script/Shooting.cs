@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Shooting : MonoBehaviour
 {
@@ -7,16 +8,38 @@ public class Shooting : MonoBehaviour
     public Transform cameraTransform;
     public Transform shootingPoint;
     public GameObject bulletPrefab;
+    public ReloadBar reloadBar;
 
     private float lastShotTime;
+    private int currentPower;
 
-    // Start is called before the first frame update
     void Update()
     {
+        if (PauseMenu.isPaused) return;
+        currentPower = reloadBar.GetPower();
         if (Input.GetMouseButtonDown(0))
         {
             animator.SetBool("isShooting", true);
-            Shoot();
+            int currentScene = SceneManager.GetActiveScene().buildIndex;
+            if (currentScene == (int)Scene.LevelOne && currentPower - 1 >= 0)
+            {
+                Shoot();
+                reloadBar.SetPower(currentPower - 1);
+            }
+            else if (currentScene == (int)Scene.LevelTwo && currentPower - 1 >= 0)
+            {
+                Shoot();
+                reloadBar.SetPower(currentPower - 1);
+            }
+            else if (currentScene == (int)Scene.LevelThree && currentPower - 1 >= 0)
+            {
+                Shoot();
+                reloadBar.SetPower(currentPower - 1);
+            }
+            else if (currentScene == (int)Scene.NewGamePlus)
+            {
+                Shoot();
+            }
             lastShotTime = Time.time;
         }
 

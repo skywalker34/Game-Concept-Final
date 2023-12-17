@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -8,15 +6,23 @@ public enum Scene
 {
     MainMenu,
     Controls,
-    Settings,
-    ThirdPersonWithAimMode
+    Tutorial,
+    LevelOne,
+    LevelTwo,
+    LevelThree,
+    NewGamePlus
 }
 
 public class MainMenu : MonoBehaviour
 {
     public void PlayGame()
     {
-        SceneManager.LoadScene((int)Scene.ThirdPersonWithAimMode);
+        SceneManager.LoadScene((int)Scene.LevelOne);
+    }
+
+    public void NewGamePlus()
+    {
+        SceneManager.LoadScene((int)Scene.NewGamePlus);
     }
 
     public void ControlsOption()
@@ -24,9 +30,9 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene((int)Scene.Controls);
     }
 
-    public void SettingsOption()
+    public void Tutorial()
     {
-        SceneManager.LoadScene((int)Scene.Settings);
+        SceneManager.LoadScene((int)Scene.Tutorial);
     }
 
     public void QuitGame()
